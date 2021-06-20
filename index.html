@@ -14,35 +14,37 @@
 
     <div class="container">
         <div class="title">
-            <h1>CRUD de Carros</h1>
+            <h1>FranCars</h1>
         </div>
 
         <section class="form">
             <h2>Ingresa la información correspondiente para agregar los vehículos que quieras almacenar:</h2>
-            <form action="" class="mainForm" id="mainForm">
-                <div class="item">
-									<label for="nameCar" class="nameCar">Nombre del Vehículo</label>
-									<input type="text" id="nameCar" placeholder="Nombre del carro"></input>
-								</div>
-                <div class="item">
-									<label for="tradeCar" class="tradeCar">Nombre del Vehículo</label>
-									<input type="text" id="tradeCar" placeholder="Nombre del carro"></input>
-								</div>
-                <div class="item">
-									<label for="modelCar" class="modelCar">Nombre del Vehículo</label>
-									<input type="text" id="modelCar" placeholder="Nombre del carro"></input>
-								</div>
-                <div class="item">
-									<label for="yearCar" class="yearCar">Nombre del Vehículo</label>
-									<input id="yearCar" placeholder="Nombre del carro"></input>
-								</div>
-                <div class="item">
-									<input type="submit" id="nameCar" placeholder="Nombre del carro"></input>
-								</div>
+            <form action="" id="mainForm">
+                <div class="mainForm">
+                    <div class="item">
+                        <label for="nameCar" class="nameCar">Nombre del Vehículo</label>
+                        <input type="text" id="nameCar" placeholder="Nombre del carro"></input>
+                    </div>
+                    <div class="item">
+                        <label for="tradeCar" class="tradeCar">Marca del Vehículo</label>
+                        <input type="text" id="tradeCar" placeholder="Marca"></input>
+                    </div>
+                    <div class="item">
+                        <label for="modelCar" class="modelCar">Modelo del Vehículo</label>
+                        <input type="text" id="modelCar" placeholder="Modelo"></input>
+                    </div>
+                    <div class="item">
+                        <label for="yearCar" class="yearCar">Año del Vehículo</label>
+                        <input id="yearCar" placeholder="Año"></input>
+                    </div>
+                </div>
+                <div class="btnForm">
+                    <input type="submit" value="Agregar Vehículo"></input>
+                </div>
 
             </form>
         </section>
-        <div class="carsInfo"></div>
+        <div class="carsList" id="carsList"></div>
     </div>
 
 

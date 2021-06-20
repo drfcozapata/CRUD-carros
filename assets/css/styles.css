@@ -24,6 +24,12 @@ html {
 :root {
     --white: #fff;
     --black: #000;
+    --yellow: #ff0;
+    --white2: rgba(255, 255, 255, .6);
+    --red1: rgb(200, 0, 0);
+    --red2: #f00;
+    --black2: rgba(0, 0, 0, .7);
+    --green: #0f0;
 }
 
 
@@ -43,10 +49,18 @@ img {
 
 h1 {
     font-family: "Open Sans", sans-serif;
-    font-size: 5rem;
+    font-size: 8rem;
     text-align: center;
-    color: var(--white);
+    color: var(--red1);
     margin-top: 5rem;
+    text-shadow: 1px 1px 0px var(--white), 2px 2px 0px var(--white), 3px 3px 0px var(--white), 6px 6px 10px var(--black2);
+}
+
+h2 {
+    color: var(--white);
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 4rem 0 2rem 0;
 }
 
 .container {
@@ -62,4 +76,60 @@ h1 {
 }
 
 
-/**
+/** Formulario **/
+
+.mainForm {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.item label {
+    margin-bottom: 0.8rem;
+    color: var(--red2);
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 1px var(--black2);
+}
+
+.item input {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--white2);
+    flex-basis: calc(25% - 1rem);
+}
+
+.item input:focus {
+    border: none;
+}
+
+.btnForm {
+    margin: 3rem 0;
+}
+
+.btnForm input {
+    background-color: var(--green);
+    border: none;
+    border-radius: .5rem;
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 500;
+    justify-content: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.carsInfo {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    color: var(--white);
+    font-size: 1.6rem;
+}
