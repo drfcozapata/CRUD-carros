@@ -1,0 +1,65 @@
+/**** @Author: Francisco Zapata ****/
+
+
+/** Reset the document **/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+/** Custom Properties **/
+
+:root {
+    --white: #fff;
+    --black: #000;
+}
+
+
+/** Globals **/
+
+body {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    background-image: url(../img/auto01.jpg);
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    color: var(--white);
+    margin-top: 5rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+
+/**
